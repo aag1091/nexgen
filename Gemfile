@@ -10,6 +10,9 @@ gem 'pg'
 gem 'haml'
 
 gem 'rails_admin'
+gem 'multi_json'
+
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 group :development, :test do
   gem 'faker'
@@ -61,3 +64,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+gem "devise"
