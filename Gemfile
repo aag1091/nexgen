@@ -14,6 +14,8 @@ gem 'multi_json'
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
+gem 'formtastic'
+
 group :development, :test do
   gem 'faker'
   gem 'populator'

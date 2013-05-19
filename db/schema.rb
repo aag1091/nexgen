@@ -11,7 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130512102252) do
+ActiveRecord::Schema.define(:version => 20130519051448) do
+
+  create_table "client_feedbacks", :force => true do |t|
+    t.string   "client_name"
+    t.string   "project_name"
+    t.text     "description"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.integer  "service_id"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "contacts", ["service_id"], :name => "index_contacts_on_service_id"
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
@@ -25,6 +45,27 @@ ActiveRecord::Schema.define(:version => 20130512102252) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "service_areas", :force => true do |t|
+    t.string   "name"
+    t.string   "short_desc"
+    t.text     "description"
+    t.boolean  "is_active"
+    t.boolean  "is_on_home"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "services", :force => true do |t|
+    t.integer  "service_area_id"
+    t.string   "name"
+    t.text     "description"
+    t.boolean  "is_active"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "services", ["service_area_id"], :name => "index_services_on_service_area_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

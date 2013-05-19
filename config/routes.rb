@@ -1,9 +1,20 @@
 Nexgen::Application.routes.draw do
+  get "client_feedbacks/index"
+
+  get "contacts/index"
+
+  get "service_areas/index"
+
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   match 'home' => 'home#index'
+  match 'about' => 'about#index'
+
+  resources :service_areas
+  resources :client_feedbacks
+  resources :contacts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
