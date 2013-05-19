@@ -13,5 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require flexslider
+//= require jquery.flexslider
 //= require_tree .
