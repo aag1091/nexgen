@@ -1,88 +1,11 @@
-%hr
-.row-fluid
-  .span4
-    %h2 Heading
-    %p
-      Donec id elit non mi porta gravida at eget metus. Fusce
-      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-      fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-      mollis euismod. Donec sed odio dui.
-    %p
-      %a.btn{:href => "#"} View details »
-  .span4
-    %h2 Heading
-    %p
-      Donec id elit non mi porta gravida at eget metus. Fusce
-      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-      fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-      mollis euismod. Donec sed odio dui.
-    %p
-      %a.btn{:href => "#"} View details »
-  .span4
-    %h2 Heading
-    %p
-      Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-      in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-      ut fermentum massa.
-    %p
-      %a.btn{:href => "#"} View details »
-%hr
-.row-fluid
-  .span4
-    %h2 Heading
-    %p
-      Donec id elit non mi porta gravida at eget metus. Fusce
-      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-      fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-      mollis euismod. Donec sed odio dui.
-    %p
-      %a.btn{:href => "#"} View details »
-  .span4
-    %h2 Heading
-    %p
-      Donec id elit non mi porta gravida at eget metus. Fusce
-      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-      fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-      mollis euismod. Donec sed odio dui.
-    %p
-      %a.btn{:href => "#"} View details »
-  .span4
-    %h2 Heading
-    %p
-      Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-      in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-      ut fermentum massa.
-    %p
-      %a.btn{:href => "#"} View details »
-%hr
-.row-fluid
-  .span4
-    %h2 Heading
-    %p
-      Donec id elit non mi porta gravida at eget metus. Fusce
-      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-      fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-      mollis euismod. Donec sed odio dui.
-    %p
-      %a.btn{:href => "#"} View details »
-  .span4
-    %h2 Heading
-    %p
-      Donec id elit non mi porta gravida at eget metus. Fusce
-      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-      fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-      mollis euismod. Donec sed odio dui.
-    %p
-      %a.btn{:href => "#"} View details »
-  .span4
-    %h2 Heading
-    %p
-      Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-      in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-      ut fermentum massa.
-    %p
-      %a.btn{:href => "#"} View details »
-%hr
+.tabbable.tabs-left
+  %ul.nav.nav-tabs
+    %li.active
+      %a{"data-toggle" => "tab", :href => "#tab1"} Service 1
+    %li
+      %a{"data-toggle" => "tab", :href => "#tab2"} Service 2
+  .tab-content
+    #tab1.tab-pane.active
+      %p I'm in Service 1.
+    #tab2.tab-pane
+      %p Howdy, I'm in Service 2.
