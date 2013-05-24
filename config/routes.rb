@@ -1,4 +1,6 @@
 Nexgen::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
   get "client_feedbacks/index"
 
   get "contacts/index"

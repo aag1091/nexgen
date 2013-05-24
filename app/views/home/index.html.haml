@@ -14,6 +14,10 @@
         = image_tag("slides/trust2.jpg")
 %hr
 .row-fluid
+  .span12
+    = Content.find_by_name('home').try(:content).html_safe
+%hr
+.row-fluid
   .span4
     %h2 Heading
     %p

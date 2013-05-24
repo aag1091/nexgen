@@ -16,6 +16,11 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 gem 'formtastic'
 
+gem 'ckeditor'
+
+gem 'carrierwave'
+gem 'mini_magick'
+
 group :development, :test do
   gem 'faker'
   gem 'populator'

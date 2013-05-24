@@ -1,0 +1,10 @@
+%h3
+.row-fluid
+%h3
+.row-fluid
+  .span1
+  .span4
+    = Content.find_by_name('contact_us').try(:content).html_safe
+  .span1
+%h3
+.row-fluid

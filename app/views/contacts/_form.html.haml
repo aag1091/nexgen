@@ -4,7 +4,7 @@
     = f.input :email, :label => false, :input_html => { :placeholder => 'Email' }
     = f.input :phone, :label => false, :input_html => { :placeholder => 'Phone' }
   = f.inputs "Service Request Details", :id => "request_details" do
-    = f.input :service, :label => false, :as => :select, :collection => Service.all, :hint => "Select Service."
+    = f.input :service, :label => false, :as => :select, :collection => Service.all, :include_blank => 'Select Service'
     = f.input :description, :label => false, :input_html => { :placeholder => 'Description' }
   = f.actions do
     = f.action :submit, :as => :button, :label => 'Submit'
