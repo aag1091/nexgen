@@ -2,13 +2,18 @@
   .span12
     .tabbable.tabs-left
       %ul.nav.nav-tabs.span2
-        %li.active
-          %a{"data-toggle" => "tab", :href => "#tab1"} Service 1
-        %li
-          %a{"data-toggle" => "tab", :href => "#tab2"} Service 2
+        - @service_areas.each_with_index do |value, index|
+          %li{:class => index == 0 ? 'active' : ''}
+            = link_to value.name, "#tab#{index}", "data-toggle" => "tab"
       .span1
       .tab-content
-        #tab1.tab-pane.active
-          %p.span8 I'm in Service 1.
-        #tab2.tab-pane
-          %p.span8 Howdy, I'm in Service 2.
+        - @service_areas.each_with_index do |value, index|
+          .tab-pane{:id => "tab#{index}", :class => index == 0 ? 'active' : ''}
+            %h2.span9{:style => 'text-align: center;'}= value.name
+            %p.span9= value.description
+            .span1
+            .span7
+              %ul
+                - value.services.each do |service|
+                  %li= service.name
+            .span1
