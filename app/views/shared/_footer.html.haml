@@ -1,2 +1,7 @@
 .footer
-  %p= Content.find_by_name('footer').try(:content).html_safe  #© Company 2013 
+  %p
+    = Content.find_by_name('footer').try(:content).html_safe  #© Company 2013 
+    .fb-like{"data-href" => "http://nexgenconcepts.in/", "data-send" => "true", "data-show-faces" => "true", "data-width" => "450"}
+    %a.twitter-share-button{"data-hashtags" => "nexgenconcepts", "data-related" => "nexgenconcepts", "data-size" => "large", "data-text" => "NexGen Concepts", "data-url" => "http://nexgenconcepts.in/", "data-via" => "nexgenconcepts", :href => "https://twitter.com/share"} Tweet
+    :javascript
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');

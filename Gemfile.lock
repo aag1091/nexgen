@@ -50,9 +50,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-webkit (0.14.2)
-      capybara (~> 2.0, >= 2.0.2)
-      json
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -266,7 +263,6 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  capybara-webkit
   carrierwave
   ckeditor
   coffee-rails (~> 3.2.1)
