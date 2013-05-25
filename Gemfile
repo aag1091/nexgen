@@ -39,7 +39,7 @@ group :test do
   gem 'spork-rails'
   gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'capybara-webkit'
+  #gem 'capybara-webkit'
   gem 'simplecov', :require => false
 end
 
