@@ -1,2 +1,2 @@
 .footer
-  %p © Company 2013 
+  %p= Content.find_by_name('footer').try(:content).html_safe  #© Company 2013 

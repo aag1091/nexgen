@@ -1,18 +1,10 @@
-%h3
+- @feedbacks.each do |feedback|
+  %h3
+  .row-fluid
+    .span4
+      = image_tag("letterhead1.jpg")
+    .span8
+      %h3= feedback.client_name
+      %p= feedback.description
+%hr
 .row-fluid
-  .span12
-%h3
-.row-fluid
-  .span12
-%h3
-.row-fluid
-  .span12
-%h3
-.row-fluid
-  .span12
-%h3
-.row-fluid
-  .span12
-%h3
-.row-fluid
-  .span12
